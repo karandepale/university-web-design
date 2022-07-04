@@ -1,0 +1,328 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+ body{
+    /* background-image: url('https://tse4.mm.bing.net/th?id=OIP.WOg2eh4spmo1_ZpBGar-IQHaFj&pid=Api&P=0&w=198&h=148');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+    /* box-sizing: border-box;
+    display:flexbox; */
+} 
+
+/* REMOVING THE ALL STYLES ON LIST ITEMS .  */
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* first page(landing page) :- */
+.first_container{
+    width:100%;
+    height:100vh;
+    background-color:antiquewhite; 
+     background-image: url('https://images.shiksha.com/mediadata/images/1554115484phpDuEVKz.png'); 
+   background-position: center;
+   background-size: cover;
+   position relative;
+}
+
+/* FRONT HEADING:- */
+.header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+/* LEFT LOGO AT TOP */
+.logo{
+    margin: 10px 0px 0px 30px;
+    width:150px;
+}
+
+/* NAVIGATION LIST ITEMS AT TOP RIGHT :-  */
+.nav-links{
+    display:inline-block;
+    color:white; 
+
+    padding:5px;
+    margin:20px;
+    margin-right:20px;
+    position:relative;
+    font-size:25px;
+    font-weight:800;
+    font-style:oblique;
+}   
+
+/* WHENEVER WE TAKE OUR CURSOR ON THE LIST ITEMS THEN AT THE BUTTOM RED COLOR HOVER EFFECT APPLIED :- */
+.nav-links::after{
+    content:''; 
+    width:0%;
+    height:4px;
+    background:black;
+    display:block;
+    transition:0.5s;
+}
+.nav-links:hover::after{
+    width:100%;
+}
+
+.text-box{
+    width:90%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+}
+
+.text-box h1{
+    color:white;
+    font-weight:bold;
+    font-size:50px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding:10px;
+}
+
+.text-box p{
+    color:white;
+    font-weight:800;
+    text-align:center;
+    font-style:oblique;
+    font-size: 30px;
+    font-weight:500;
+    padding:20px;
+    margin:15px;
+}
+
+
+
+
+/* BUTTON DESIGN :- */
+.text-box button{
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    background-color:dodgerblue;
+    border:2px solid black;
+    border-radius:10px;
+    padding:12px 34px ;
+    color:black;
+    cursor:pointer;
+}
+/* HOVER EFFECTS ON BUTTON:- */
+.text-box button:hover{
+    background-color:red;0p
+    transition:0.5s;
+}
+
+/* MAKING WEBSITE RESPONSIVE FOR SMALL DEVICES:- */
+@media(max-width:700px){
+    .text-box h1{
+        font-size:20px;
+    }
+    .nav-links{
+        display:block;
+        position:absolute;
+        height:100vh;
+        width:200px;
+        top:0;
+        right:0;
+        text-align:left;
+        background-color:red;
+    }
+}
+
+                              /* COURSE SECTION (PART - 2) */
+
+.course{
+    /* background-color:aquamarine; */
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:80px;
+}         
+
+.course h1{
+    font-size:36px;
+    font-weight:600;
+   padding:10px;
+}
+
+.course p{
+    text-align:center;
+    font-style:oblique;
+    font-size: 20px;
+    font-weight:500;
+    padding:20px;
+    margin:15px;
+}
+
+/* style for single row:- */
+.row{
+    display:flex;
+    margin-top:5%;
+    justify-content:space-between;
+}
+
+/* style for each colom */
+.colom{
+    flex-basis:30%;
+    background-color:azure;
+    border-radius:10px;
+    padding:20px 12px;
+    margin-bottom:5%;
+    box-sizing:border-box;
+    cursor:pointer;
+}
+
+/* hover effects on each coloum:- */
+.colom:hover{
+    box-shadow: 0 0 20px 0px  ;
+    background-color:red;
+    color:white;
+    transition:0.7s;
+}
+
+/* /making responsive the course section for small devices"- */
+@media (max-width:700px){
+    .row{
+        flex-direction:column;
+    }
+}
+
+
+
+                               /* --->>  facility section <<--- */
+
+
+.facilities {
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+
+.facilities h1{
+    font-size:36px;
+    font-weight:600;
+    padding:10px;    
+}
+
+.facilities p{
+text-align:center;
+    font-style:oblique;
+    font-size: 20px;
+    font-weight:500;
+    padding:20px;
+    margin:15px;
+}
+
+.facility_row{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+.facility_col{
+    flex-basis:30%;
+    border-radius:10px;
+    margin-bottom:5%;
+}
+
+.facility_col img{
+    width:100%;
+    border-radius:10px;
+}
+
+.facility_col:hover{
+    transition:0.5s;
+    box-shadow: 0 0 20px 0;
+    background-color: beige;
+}
+
+
+
+
+              /* CALL TO ACTION SECTION */
+
+
+.cta{
+    text-align: center;
+    margin:100px auto;
+    background-image:url('https://tse3.mm.bing.net/th?id=OIP.8FFfmzfqmKEarTnP9iD41QAAAA&pid=Api&P=0&w=206&h=174');
+    width:80%;
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    padding:150px 0;
+    text-align: center;
+    background-color:blanchedalmond;
+}
+
+
+.cta h1{
+    color:cornsilk;
+    font-weight:900;
+    margin-bottom:40px;
+    padding:0;
+}
+
+.btn{
+align-items: center;
+text-align: center;
+font-size: 15px;
+font-style: italic;
+background-color:cadetblue;
+border:2px solid black;
+border-radius:10px;
+padding:12px 34px ;
+color:white;
+cursor:pointer;
+}
+
+.btn:hover{
+background-color:red;0p
+transition:0.5s;
+}
+
+
+
+
+                            /* FOOTER SECTION */
+
+
+.footer{
+    width:100%;
+    text-align:center;
+    padding:30px 0;
+    align-items:center;
+}
+
+.footer h4{
+    margin-bottom:25px;
+    margin-top:20px;
+    font-weight:600;
+    font-size:35px;
+}
+.footer p{
+    font-size:25px;
+    font-style:italic;
+    text-align: center;
+}
+
+
+.icons{
+    flex-basis:30px;
+    align-items:center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
